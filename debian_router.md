@@ -1,8 +1,8 @@
 # setting up debian as a router 
 
 You need to add a forwarding rule using iptables command, where:
-	- eth0 is the interface, that will receive packets, 
-	- eth1 outgoing interface 
+	- eth1 is the interface, that will receive packets, 
+	- eth0 outgoing interface 
 ```
 modprobe iptable_nat
 echo 1 > /proc/sys/net/ipv4/ip_forward
